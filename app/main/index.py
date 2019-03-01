@@ -1,5 +1,5 @@
 from . import main
 
 @main.route('/')
-def index():
+def index_page():
     return 'hello world!'
