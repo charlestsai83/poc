@@ -1,12 +1,7 @@
 #! /bin/python3
 
-from flask import Flask
+from . import creat_app
 
-app = Flask('__main__')
+app = creat_app()
 
-@app.route('/')
-def index():
-    return 'hello world!'
-
-if __name__ == '__main__':
-    app.run()
+app.run()
